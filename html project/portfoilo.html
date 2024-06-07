@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Berdia Portfolio</title>
+
+<link rel="website icon" type="png"
+href="imgs/website icon.png">
+<style>
+  body { font-family: Arial, sans-serif; margin: 0; padding: 0; }
+  .container { max-width: 1200px; margin: auto; padding: 20px; }
+  header { background: #333; color: white; padding: 10px 0; text-align: center; }
+  section { margin: 20px 0; }
+  footer { background: #333; color: white; text-align: center; padding: 10px 0; }
+  #about{
+    text-align: center;
+  }
+  #contact{
+    text-align: center;
+  }
+  #h2{
+    text-align: center;
+  }
+
+</style>
+</head>
+<body>
+
+<header>
+  <h1>Berdia</h1>
+  <p>Web Developer & Designer</p>
+  <h2>date</h2>
+  <button type="button" onclick="document.getElementById('date').innerHTML = Date()">click here to see the time</button>
+  <p id="date"></p>
+</header>
+
+<center>
+    <h1>Click on the button</h1>
+    <p id="demo">Hello guys</p>
+    <button type="button" onclick="document.getElementById('demo').innerHTML = 'i want you to join goa oriented academy'">click on me</button>
+</center>
+
+<div class="container">
+  <section id="about">
+    <h2 id="about">About Me</h2>
+    <img src="imgs/me.png" alt="this is me">
+    <p>my name is berdia bekauri</p>
+    <p>i am 11 years old</p>
+    <p>i am from georgia</p>
+    <p>i study at goa oriented academy</p>
+    <p>i am a programmer, web developer and designer</p>
+    <p>these are my programming langueges</p>
+    <ol>
+        <li>python</li>
+        <li>html</li>
+        <li>css</li>
+        <li>JavaScript</li>
+    </ol>
+    <p>these are the country langueges i can speak</p>
+    <ul>
+        <li>georgian</li>
+        <li>russian</li>
+        <li>english</li>
+        <li>italian</li>
+    </ul>
+  </section>
+  <section id="contact">
+    <h2 id="contact">Contact</h2>
+    <h2 id="h2">gots some problems to solve?</h2>
+    <br>
+    <center>
+        <form>
+            <p>name</p>
+            <input type="text" name="name" placeholder="enter your name" required>
+            <p>email</p>
+            <input type="email" name="email" placeholder="enter your email" required>
+            <p>password</p>
+            <input type="password" name="password" placeholder="enter your password" required>
+            <br>
+            <button type="submit">Enter</button>
+        </form>
+    </center>
+  </section>
+</div>
+
+<footer>
+    <h1>little fun thing i made for you with JavaScript</h1>
+    <button type="button" onclick="document.getElementById('fun').src='pic_bulbon.gif'">Turn on</button>
+    <br>
+    <img id="fun" src="pic_bulboff.gif" alt="bulb" style="width: 100px;">
+    <br>
+    <button type="button" onclick="document.getElementById('fun').src='pic_bulboff.gif'">Turn off</button>
+  <p>&copy; 2024 Berdia</p>
+</footer>
+
+</body>
+</html>
