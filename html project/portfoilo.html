@@ -26,16 +26,49 @@ href="imgs/website icon.png">
   button {
     background-color: #333;
     color: white;
+
+    border: 10px solid #333;
+    border-radius: 40px;
   }
 
   button:hover {
     background-color: white;
     color: black;
+
+    transition: 0.25s;
   }
 
   button:active {
     background: black;
     color: white;
+
+    transition: 0.25s;
+  }
+
+  .button {
+    background-color: white;
+    color: black;
+
+    border: 10px solid black;
+    border-radius: 40px;
+  }
+
+  .button:hover {
+    background-color: transparent;
+    color: white;
+
+    border: solid white;
+
+    transition: 0.25s;
+  }
+
+  .button:active {
+    background-color: white;
+    color: black;
+
+    border: solid black;
+
+    transition: 0.25s;
   }
 </style>
 </head>
@@ -45,7 +78,7 @@ href="imgs/website icon.png">
   <h1>Berdia</h1>
   <p>Web Developer & Designer</p>
   <h2>date</h2>
-  <button type="button" onclick="document.getElementById('date').innerHTML = Date()">click here to see the time</button>
+  <button type="button" onclick="document.getElementById('date').innerHTML = Date()" class="button">click here to see the time</button>
   <p id="date"></p>
 </header>
 
@@ -102,15 +135,15 @@ href="imgs/website icon.png">
 
 <footer>
     <h1>little fun thing i made for you with JavaScript</h1>
-    <button type="button" onclick="document.getElementById('fun').src='pic_bulbon.gif'">Turn on</button>
+    <button type="button" onclick="document.getElementById('fun').src='pic_bulbon.gif'" class="button">Turn on</button>
     <br>
     <img id="fun" src="pic_bulboff.gif" alt="bulb" style="width: 100px;">
     <br>
-    <button type="button" onclick="document.getElementById('fun').src='pic_bulboff.gif'">Turn off</button>
+    <button type="button" onclick="document.getElementById('fun').src='pic_bulboff.gif'" class="button">Turn off</button>
   <p>&copy; 2024 Berdia</p>
   <br>
-  <a href="https://www.facebook.com/berdia.bekauri.54"><button><img src="imgs/facebook.png" alt="my facebook" width="50"></button></a>
-  <a href="https://github.com/berdiabekauri14"><button><img src="imgs/github.png" alt="my github" width="50"></button></a>
+  <a href="https://www.facebook.com/berdia.bekauri.54"><button class="button"><img src="imgs/facebook.png" alt="my facebook" width="50"></button></a>
+  <a href="https://github.com/berdiabekauri14"><button class="button"><img src="imgs/github.png" alt="my github" width="50"></button></a>
 </footer>
 </body>
 </html>
