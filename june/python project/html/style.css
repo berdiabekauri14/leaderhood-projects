@@ -1,0 +1,132 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+.parent {
+    width: 1300px;
+    height: 800px;
+    border-radius: 40px;
+    box-shadow: 0 0 20px rgb(206, 206, 206);
+    background-color: white;
+    overflow: hidden;
+    display: flex;
+    text-align: center;
+}
+
+.image, form{
+    width: 50%;
+}
+
+.image {
+    background-image: url('imgs/DSC07293.JPG');
+    background-size: cover;
+    background-position: bottom;
+}
+
+.image2 {
+    width: 50%;
+}
+
+.image3 {
+    width: 50%;
+}
+
+.image3 {
+    background-image: url('imgs/DSC07585\ \(1\).JPG');
+    background-size: cover;
+    background-position: bottom;
+}
+
+.image4 {
+    width: 50%;
+}
+
+.image4 {
+    background-image: url('imgs/contactus.jpg');
+    background-size: cover;
+    background-position: bottom;
+}
+
+.image2 {
+    background-image: url('imgs/goa\ oriented\ academy.jpg');
+    background-size: cover;
+    background-position: bottom;
+}
+
+.form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 70px;
+}
+
+.form form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+input {
+    width: 100%;
+    padding: 20px 10px;
+    border: none;
+    border-radius: 17px;
+    outline: none;
+    background-color: rgb(240, 240, 240);
+}
+
+.create-account {
+    width: 100%;
+    padding: 20px 10px;
+    border-radius: 17px;
+    background-color: rgb(41, 98, 255);
+    border: 1px solid rgb(41, 98, 255);
+    color: aliceblue;
+    box-shadow: 0 0 25px gray;
+    transition: 0.25s;
+    cursor: pointer;
+}
+
+.create-account:hover {
+    background-color: transparent;
+    color: rgb(41, 98, 255);
+
+    transition: 0.25s;
+}
+
+.create-account:active {
+    background-color: rgb(41, 98, 255);
+    color: aliceblue;
+
+    transition: 0.25s;
+}
+
+input .create-account {
+    font-size: 18px;
+}
+
+h1 {
+    font-size: 40px;
+    color: rgb(70, 91, 101);
+}
+
+.child {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
