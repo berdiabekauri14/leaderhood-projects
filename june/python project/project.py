@@ -1,6 +1,5 @@
 import turtle
 
-import project as logo
 
 wn = turtle.Screen()
 wn.bgcolor("black")
