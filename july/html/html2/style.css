@@ -1,0 +1,244 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    animation: Animation 0.25s;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+@keyframes Animation {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 100;
+    }
+}
+
+img {
+    border-radius: 40px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.322);
+
+    animation: image-animation 300ms;
+}
+
+@keyframes image-animation {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 100;
+    }
+}
+
+label {
+    position: relative;
+    left: 50px;
+    bottom: 30px;
+}
+
+#Berdia {
+    animation: Berdia-animation 300ms;
+}
+
+@keyframes Berdia-animation {
+    from {
+        transform: translateY(-30px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(10px);
+        opacity: 100;
+    }
+}
+
+#h1 {
+    animation: text-animation 300ms;
+}
+
+@keyframes text-animation {
+    from {
+        transform: translateX(-30px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateX(10px);
+        opacity: 100;
+    }
+}
+
+#header-text {
+    animation: header-text-animation 300ms;
+}
+
+@keyframes header-text-animation {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 100;
+    }
+}
+
+#header-text2 {
+    animation: header-text-animation2 300ms;
+}
+
+@keyframes header-text-animation2 {
+    from {
+        transform: translateX(-30px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateX(10px);
+        opacity: 100;
+    }
+}
+
+
+
+input {
+    text-align: center;
+    border-radius: 40px;
+
+    width: 150px;
+    height: 60px;
+}
+
+button {
+    background-color: blue;
+    color: white;
+
+    border: 2px solid blue;
+
+    border-radius: 30px;
+
+    width: 90px;
+    height: 50px;
+
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.301);
+
+    animation: button-animation 300ms;
+
+    transition: 0.25s;
+}
+
+@keyframes button-animation {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 100;
+    }
+}
+
+button:hover {
+    background-color: transparent;
+    color: blue;
+
+    transition: 0.25s;
+}
+
+button:active {
+    background-color: blue;
+    color: white;
+
+    transition: 0.25s;
+}
+
+.child {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button {
+    background-color: white;
+    color: blue;
+
+    border: 2px solid white;
+    border-radius: 30px;
+
+    animation: button 0.25s;
+
+    width: 90px;
+    height: 50px;
+
+    transition: 0.25s;
+}
+
+.button:hover {
+    background-color: transparent;
+    color: white;
+
+    transition: 0.25s;
+}
+
+.button:active {
+    background-color: white;
+    color: blue;
+
+    transition: 0.25s;
+}
+
+@keyframes button {
+    from {
+        background-color: blue;
+        color: white;
+        opacity: 0;
+    }
+
+    to {
+        background-color: white;
+        color: blue;
+        opacity: 100;
+    }
+}
+
+.header {
+    background-color: blue;
+    color: white;
+    text-align: center;
+}
+
+#h2 {
+    animation: h2-animation 300ms 1;
+}
+
+@keyframes h2-animation {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 100;
+    }
+}
+
+.a {
+    animation: a-button 0.25s;
+}
+
+@keyframes a-button {
+    from {
+        transform: translateY(50px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(50px);
+        opacity: 100;
+    }
+}

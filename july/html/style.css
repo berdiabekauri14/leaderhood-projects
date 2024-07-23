@@ -1,0 +1,207 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    animation: Animation 300ms 1;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+@keyframes Animation {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 100;
+    }
+}
+
+.parent {
+    background-image: url('./imgs/goa.jpg');
+    background-size: cover;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 1000px;
+    height: 800px;
+}
+
+#checkbox {
+    width: 100px;
+    height: 50px;
+}
+
+label {
+    font-size: medium;
+    color: white;
+
+    position: relative;
+    left: 30px;
+    bottom: 20px;
+}
+
+.text {
+    color: green;
+}
+
+input {
+    border-radius: 40px;
+    text-align: center;
+}
+
+.Enter {
+    background-color: green;
+    color: white;
+
+    border: 2px solid green;
+    border-radius: 40px;
+
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.493);
+
+    transition: 0.25s;
+}
+
+.Enter:hover {
+    background-color: transparent;
+
+    transition: 0.25s;
+}
+
+.Enter:active {
+    background-color: green;
+    color: white;
+
+    transition: 0.25s;
+}
+
+form {
+    color: white;
+}
+
+img {
+    border-radius: 40px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.26);
+}
+
+.a {
+    color: white;
+
+    font-size: medium;
+
+    text-shadow: 0px 0px 20px rgba(0, 0, 0, 0.185);
+
+    transition: 0.25s;
+}
+
+.a:hover {
+    font-size: 30px;
+
+    transition: 0.25s;
+}
+
+.a:active {
+    font-size: medium;
+
+    transition: 0.25s;
+}
+
+.child {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.p {
+    color: white;
+}
+
+.header {
+    background-color: green;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+
+#date {
+    color: white;
+    text-align: center;
+}
+
+#Enter {
+    background-color: green;
+    color: white;
+
+    width: 200px;
+    height: 50px;
+
+    border: 2px solid green;
+    border-radius: 40px;
+
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.377);
+
+    transition: 0.25s;
+}
+
+#Enter:hover {
+    background-color: transparent;
+    color: green;
+
+    transition: 0.25s;
+}
+
+#Enter:active {
+    background-color: green;
+    color: white;
+
+    transition: 0.25s;
+}
+
+.Enter {
+    width: 200px;
+    height: 50px;
+}
+
+input {
+    width: 200px;
+    height: 50px;
+}
+
+.button {
+    background-color: transparent;
+    color: white;
+
+    width: 100px;
+    height: 50px;
+
+    border: 2px solid white;
+    border-radius: 40px;
+
+    transition: 0.25s;
+}
+
+.button:hover {
+    background-color: white;
+    color: green;
+
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.322);
+
+    transition: 0.25s;
+}
+
+.button:active {
+    background-color: transparent;
+    color: white;
+
+    transition: 0.25s;
+}
+
+button, a {
+    cursor: pointer;
+}

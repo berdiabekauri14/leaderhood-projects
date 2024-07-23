@@ -1,0 +1,200 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    animation: Animation 0.25s 1;
+}
+
+@keyframes Animation {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 100;
+    }
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+img {
+    border-radius: 40px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.541);
+}
+
+.child {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+input {
+    border-radius: 40px;
+    width: 150px;
+    height: 100px;
+    text-align: center;
+}
+
+#welcome {
+    position: relative;
+    bottom: 350px;
+    animation: header-animation 0.25s 1;
+}
+
+@keyframes header-animation {
+    from {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+
+    to {
+        opacity: 100;
+        transform: translateY(20px);
+    }
+}
+
+#login {
+    position: relative;
+    bottom: 350px;
+    left: 100px;
+}
+
+#h2 {
+    position: relative;
+    bottom: 350px;
+    left: 40px;
+    animation: header-animation 0.25s 1;
+}
+
+.form {
+    position: relative;
+    right: 200px;
+}
+
+.Header {
+    background-color: green;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.Enter {
+    background-color: green;
+    color: white;
+    border: 2px solid green;
+    border-radius: 40px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.452);
+    width: 100px;
+    height: 50px;
+
+    transition: 0.25s;
+}
+
+.Enter:hover {
+    background-color: transparent;
+    color: green;
+
+    transition: 0.25s;
+}
+
+.Enter:active {
+    background-color: green;
+    color: white;
+
+    transition: 0.25s;
+}
+
+#button {
+    background-color: green;
+    color: white;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.432);
+    transition: 0.25s;
+}
+
+#button:hover {
+    background-color: rgb(0, 100, 0);
+    color: rgb(212, 212, 212);
+    transition: 0.25s;
+}
+
+#button:active {
+    background-color: green;
+    color: white;
+    transition: 0.25s;
+}
+
+button {
+    background-color: green;
+    color: white;
+    border: 2px solid green;
+    border-radius: 40px;
+    transition: 0.25s;
+}
+
+button:hover {
+    background-color: transparent;
+    color: green;
+    transition: 0.25s;
+}
+
+button:active {
+    background-color: green;
+    color: white;
+    transition: 0.25s;
+}
+
+.background {
+    background-image: url('./imgs/goa\ oriented\ academy.jpg');
+    background-size: cover;
+    width: 1300px;
+    height: 800px;
+}
+
+#contact1 {
+    position: relative;
+    left: 300px;
+    bottom: 50%;
+}
+
+.header-button {
+    background: white;
+    color: green;
+    border: 2px solid white;
+    border-radius: 40px;
+
+    transition: 0.25s;
+}
+
+.header-button:hover {
+    background-color: transparent;
+    color: white;
+
+    transition: 0.25s;
+}
+
+.header-button:active {
+    background-color: white;
+    color: green;
+    transition: 0.25s;
+}
+
+.parent {
+    width: 1300px;
+    height: 800px;
+    border-radius: 40px;
+    box-shadow: 0 0 20px rgb(206, 206, 206);
+    background-color: white;
+    overflow: hidden;
+    display: flex;
+    text-align: center;
+}
+
+.background {
+    background-image: url('./imgs/goa\ oriented\ academy.jpg');
+    background-size: cover;
+    background-position: bottom;
+}
