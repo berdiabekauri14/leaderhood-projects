@@ -1,0 +1,118 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Cascadia Code;
+}
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(to bottom right, purple, blue);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.calculator-container {
+    width: 499px;
+    height: 550px;
+    background-color: rgba(255, 255, 255, 0.199);
+    backdrop-filter: blur(10px);
+    border: 1px solid white;
+    border-radius: 15px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.479);
+    animation: container-animate 1s;
+}
+
+@keyframes container-animate {
+    from {
+        opacity: 0;
+        transform: scale(0);
+    }
+    to {
+        opacity: 100;
+        transform: scale(normal);
+    }
+}
+
+button {
+    width: 90px;
+    height: 60px;
+    border-radius: 180px;
+    border: none;
+    outline: none;
+    font-weight: bolder;
+    font-size: 2em;
+    cursor: pointer;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.589);
+    transition: 0.24s;
+}
+
+button:hover {
+    color: gray;
+    transition: 0.24s;
+}
+
+button:active {
+    background-color: gray;
+    color: white;
+    transition: 0.24s;
+}
+
+.buttons {
+    position: relative;
+    top: 21px;
+    left: 15px;
+    right: 20px;
+
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    row-gap: 5px;
+    column-gap: 4px;
+}
+
+input {
+    position: relative;
+    top: 10px;
+    left: 10px;
+    width: 475px;
+    height: 200px;
+    border: none;
+    outline: none;
+    border-radius: 15px;
+    text-align: right;
+    font-weight: bold;
+    font-size: 10em;
+    letter-spacing: 3.5px;
+}
+
+.operator {
+    background-color: orangered;
+    color: white;
+}
+
+.operator:hover {
+    background-color: rgb(253, 146, 107);
+    color: black;
+}
+
+.operator:active {
+    background-color: white;
+    color: black;
+}
+
+#clear {
+    position: relative;
+    left: 2px;
+    width: 370px;
+    letter-spacing: 3px;
+    font-size: 3em;
+}
+
+#button1, #button2, #button3, #button4, #button5, #button6, #button7, #button8 {
+    position: relative;
+    right: 279px;
+    width: 135px;
+    font-size: 2.3em;
+}
